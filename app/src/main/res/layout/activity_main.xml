@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="98dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="140dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="68dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/wight"
+        android:text="SignUp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="207dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginRight="195dp"
+
+        android:text="Are You Specialist Worker "
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="320dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="81dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnGo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/goSignIn"
+        android:layout_width="163dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Already Registed?"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/btnGo" />
+
+</android.support.constraint.ConstraintLayout>

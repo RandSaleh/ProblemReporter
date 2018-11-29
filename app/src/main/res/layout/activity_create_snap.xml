@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSnap">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:contentDescription="@string/selectedimage"
+        android:layout_width="218dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="281dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginBottom="87dp"
+        android:text="choose image"
+        app:layout_constraintBottom_toTopOf="@+id/txtMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:text="Send"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
+</android.support.constraint.ConstraintLayout>
